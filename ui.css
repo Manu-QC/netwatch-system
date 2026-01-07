@@ -1,0 +1,201 @@
+/* ===== ui.css - ESTILO CYBERPUNK ===== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --bg-dark: #050505;
+  --panel: rgba(10, 20, 30, 0.85);
+  --neon-blue: #00f3ff;
+  --neon-pink: #bc13fe;
+  --neon-green: #0aff00;
+  --grid-line: rgba(0, 243, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Share Tech Mono', monospace; /* Fuente estilo código */
+  background-color: var(--bg-dark);
+  /* Efecto Grid de fondo futurista */
+  background-image: 
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: #e0faff;
+  overflow-x: hidden;
+}
+
+/* Efecto viñeta oscura en los bordes */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle, transparent 40%, #000 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Cyberpunk */
+.header {
+  border-bottom: 2px solid var(--neon-blue);
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px var(--neon-blue);
+  padding: 15px 0;
+  backdrop-filter: blur(5px);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Status Indicator */
+.server-status {
+  border: 1px solid var(--neon-green);
+  padding: 5px 15px;
+  border-radius: 4px;
+  background: rgba(10, 255, 0, 0.1);
+  box-shadow: 0 0 10px var(--neon-green);
+  font-weight: bold;
+  color: var(--neon-green);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.status-dot {
+  width: 10px; height: 10px; background: var(--neon-green);
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink { 50% { opacity: 0.3; } }
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 1px dashed var(--neon-pink);
+  margin-bottom: 30px;
+}
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  background: linear-gradient(90deg, #fff, var(--neon-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtitle { color: var(--neon-pink); letter-spacing: 1px; }
+
+/* Grid de Cámaras */
+.streams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+/* Tarjeta de Video Futurista */
+.stream-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--neon-blue);
+  position: relative;
+  clip-path: polygon(
+    0 0, 
+    100% 0, 
+    100% calc(100% - 20px), 
+    calc(100% - 20px) 100%, 
+    0 100%
+  ); /* Esquina cortada estilo sci-fi */
+  transition: all 0.3s ease;
+}
+
+.stream-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 243, 255, 0.3);
+  border-color: #fff;
+}
+
+.stream-card::before {
+  content: "REC";
+  position: absolute;
+  top: 15px; right: 15px;
+  color: var(--danger);
+  font-size: 10px;
+  z-index: 10;
+  color: red;
+  font-weight: bold;
+  animation: blink 2s infinite;
+}
+
+.stream-title {
+  position: absolute;
+  top: 0; left: 0;
+  background: var(--neon-blue);
+  color: #000;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.video-player {
+  width: 100%;
+  display: block;
+  opacity: 0.9; /* Un poco transparente para mezclar con el fondo */
+  border-bottom: 1px solid var(--neon-blue);
+}
+
+.stream-meta {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--neon-blue);
+  background: rgba(0, 243, 255, 0.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #333;
+  color: #666;
+  font-size: 12px;
+}
+.footer-name {
+  color: var(--neon-pink);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Overlay de "Sin Señal" estilo TV antigua */
+.video-overlay {
+  position: absolute; inset: 0;
+  background: #000;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  color: var(--neon-pink);
+  z-index: 5;
+}
+.video-overlay.hidden { display: none; }

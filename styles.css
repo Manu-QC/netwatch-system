@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: #0e1117;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #161b22;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem;
+}
+
+video {
+  width: 100%;
+  background: black;
+  border-radius: 10px;
+}
+
+.controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #238636;
+  color: white;
+  cursor: pointer;
+}
+
+.offline {
+  color: #f85149;
+}
+
+.online {
+  color: #3fb950;
+}

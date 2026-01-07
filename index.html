@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CyberMonitor V3.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="ui.css?v=2" />
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  <script>
+    // TUS CÁMARAS:
+    window.__STREAMS__ = ["cam1", "cam2", "cam3"];
+    window.__CHECK_INTERVAL_MS__ = 1500;
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-text">⚡ NETWATCH SYSTEM ⚡</div>
+      <div class="server-status">
+        <span class="status-dot"></span>
+        <span>SYSTEM ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero-section">
+      <h1 class="hero-title">CENTRO DE COMANDO</h1>
+      <p class="subtitle">INTERFAZ DE VIGILANCIA EN TIEMPO REAL // BAJA LATENCIA</p>
+    </section>
+
+    <div style="margin-bottom: 20px; display: flex; justify-content: flex-end;">
+      <span style="color: var(--neon-blue); font-size: 14px;">> CONEXIÓN SEGURA ESTABLECIDA...</span>
+    </div>
+
+    <div id="streamsGrid" class="streams-grid"></div>
+  </main>
+
+  <footer>
+    <div>SISTEMA DESARROLLADO POR</div>
+    <div class="footer-name">Manuel Eduardo Quispe Condori</div>
+    <div style="margin-top:5px; opacity:0.5;">INGENIERÍA INFORMÁTICA Y DE SISTEMAS</div>
+  </footer>
+
+  <script src="state.js"></script>
+  <script src="monitor.js"></script>
+  <script src="player.js"></script>
+
+  <script>
+    // Inicialización
+    (function () {
+      const streams = Array.isArray(window.__STREAMS__) ? window.__STREAMS__ : ['cam1'];
+      if (window.streamingUI) window.streamingUI.createAll(streams);
+      if (window.streamingMonitor) window.streamingMonitor.startAll(streams, window.__CHECK_INTERVAL_MS__);
+    })();
+  </script>
+
+</body>
+</html>

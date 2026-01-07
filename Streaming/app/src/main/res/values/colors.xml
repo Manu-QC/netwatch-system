@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores base -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#616161</color>
+
+    <!-- Acciones -->
+    <color name="colorPrimaryAction">#2E7D32</color>   <!-- Verde: emitir -->
+    <color name="colorStopAction">#C62828</color>      <!-- Rojo: detener -->
+    <color name="colorSecondaryAction">#1565C0</color> <!-- Azul: acciones -->
+
+    <!-- Estados -->
+    <color name="colorStreaming">#D32F2F</color>       <!-- LIVE -->
+    <color name="colorIdle">#9E9E9E</color>
+
+    <!-- UI -->
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorButtonText">#FFFFFF</color>
+
+</resources>

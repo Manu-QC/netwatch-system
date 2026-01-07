@@ -1,0 +1,102 @@
+{
+    "2D:37:97:22:E6:12": {
+        "manufacturer": "Microsoft",
+        "model": "Windows Device",
+        "type": "PC"
+    },
+    "70:B1:3D:94:96:49": {
+        "manufacturer": "Samsung",
+        "model": "Galaxy Device",
+        "type": "CEL"
+    },
+    "9C:28:F7:8A:0A:E5": {
+        "manufacturer": "Desconocido",
+        "model": "Dispositivo Genérico",
+        "type": "CEL"
+    },
+    "26:AE:7D:D9:52:6A": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "0E:BC:B1:DE:3F:E2": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "62:CB:02:66:46:49": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "50:8E:49:D7:F9:E2": {
+        "manufacturer": "Desconocido",
+        "model": "Dispositivo Genérico",
+        "type": "CEL"
+    },
+    "EA:DD:4C:75:85:15": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "06:82:17:05:6C:E9": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "37:DF:07:63:2D:36": {
+        "manufacturer": "Microsoft",
+        "model": "Windows Device",
+        "type": "PC"
+    },
+    "52:B8:53:50:77:D1": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "5D:D6:7D:39:BE:1E": {
+        "manufacturer": "Desconocido",
+        "model": "Dispositivo Genérico",
+        "type": "BLE"
+    },
+    "48:87:59:2A:62:CB": {
+        "manufacturer": "Desconocido",
+        "model": "Dispositivo Genérico",
+        "type": "CEL"
+    },
+    "70:5F:A3:4E:DF:B5": {
+        "manufacturer": "Xiaomi",
+        "model": "Redmi\/POCO (Detectado)",
+        "type": "CEL"
+    },
+    "CA:48:93:3D:78:23": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "2A:BC:85:D2:AB:5C": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "4B:EB:3B:54:F0:E2": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "4F:5D:BC:1D:0B:E1": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "3A:4F:2C:8A:E2:41": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    },
+    "02:00:00:00:00:00": {
+        "manufacturer": "Smartphone Privado",
+        "model": "MAC Aleatoria (Probable Xiaomi\/Samsung)",
+        "type": "CEL"
+    }
+}
